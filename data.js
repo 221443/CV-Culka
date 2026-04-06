@@ -126,5 +126,13 @@ window.cvData = {
         "A VS Code extension that reads structured follow-up task payloads from an agentic workflow and surfaces them as launchable Copilot Chat sessions via a tree view and status bar indicator.",
       link: "https://github.com/221443/next-steps-spawner-extension",
     },
+    {
+      title: "Random Data Generator",
+      role: "Solo developer",
+      stack: "JavaScript · HTML · CSS",
+      description:
+        "A browser-based tool for generating configurable random identifiers with a custom prefix, suffix, and middle length, with one-click copy and batched generation for large counts.",
+      link: "https://221443.github.io/randomDataGenerator/",
+    },
   ],
 };
