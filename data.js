@@ -118,5 +118,13 @@ window.cvData = {
         "A responsive static website created for a Minecraft community game server, communicating server rules, features, and how to join.",
       link: "https://playcraft-web.vercel.app/",
     },
+    {
+      title: "Next Steps Spawner VS Code Extension",
+      role: "Solo developer",
+      stack: "TypeScript · VS Code API",
+      description:
+        "A VS Code extension that reads structured follow-up task payloads from an agentic workflow and surfaces them as launchable Copilot Chat sessions via a tree view and status bar indicator.",
+      link: "https://github.com/221443/next-steps-spawner-extension",
+    },
   ],
 };
