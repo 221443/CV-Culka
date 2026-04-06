@@ -1,74 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional CV and portfolio overview for Alexandr Culka.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional CV and portfolio overview for Alexandr Culka."
+    />
     <title>Alexandr Culka | CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="page-shell">
-        <header class="hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Curriculum Vitae</p>
-                <h1 id="full-name">Alexandr Culka</h1>
-                <p id="headline" class="headline"></p>
-                <p id="summary" class="summary"></p>
-                <ul id="contact-list" class="contact-list"></ul>
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Curriculum Vitae</p>
+          <h1 id="full-name">Alexandr Culka</h1>
+          <p id="headline" class="headline"></p>
+          <p id="summary" class="summary"></p>
+          <ul id="contact-list" class="contact-list"></ul>
+        </div>
+      </header>
+
+      <main>
+        <section class="content-grid">
+          <article class="panel panel-wide">
+            <div class="section-heading">
+              <p class="section-kicker">Profile</p>
+              <h2>About</h2>
             </div>
+            <p id="about-text" class="body-copy"></p>
+          </article>
 
-        </header>
+          <article class="panel">
+            <div class="section-heading">
+              <p class="section-kicker">Focus</p>
+              <h2>Core Skills</h2>
+            </div>
+            <ul id="skills-list" class="tag-list"></ul>
+          </article>
 
-        <main>
-            <section class="content-grid">
-                <article class="panel panel-wide">
-                    <div class="section-heading">
-                        <p class="section-kicker">Profile</p>
-                        <h2>About</h2>
-                    </div>
-                    <p id="about-text" class="body-copy"></p>
-                </article>
+          <article class="panel">
+            <div class="section-heading">
+              <p class="section-kicker">Background</p>
+              <h2>Education</h2>
+            </div>
+            <div id="education-list" class="stack-list"></div>
+          </article>
 
-                <article class="panel">
-                    <div class="section-heading">
-                        <p class="section-kicker">Focus</p>
-                        <h2>Core Skills</h2>
-                    </div>
-                    <ul id="skills-list" class="tag-list"></ul>
-                </article>
+          <article class="panel panel-wide">
+            <div class="section-heading">
+              <p class="section-kicker">Career</p>
+              <h2>Experience</h2>
+            </div>
+            <div id="experience-list" class="timeline"></div>
+          </article>
 
-                <article class="panel">
-                    <div class="section-heading">
-                        <p class="section-kicker">Background</p>
-                        <h2>Education</h2>
-                    </div>
-                    <div id="education-list" class="stack-list"></div>
-                </article>
-
-                <article class="panel panel-wide">
-                    <div class="section-heading">
-                        <p class="section-kicker">Career</p>
-                        <h2>Experience</h2>
-                    </div>
-                    <div id="experience-list" class="timeline"></div>
-                </article>
-
-                <article class="panel panel-full">
-                    <div class="section-heading">
-                        <p class="section-kicker">Selected Work</p>
-                        <h2>Web Application Projects</h2>
-                    </div>
-                    <div id="projects-list" class="projects-grid"></div>
-                </article>
-            </section>
-        </main>
+          <article class="panel panel-full">
+            <div class="section-heading">
+              <p class="section-kicker">Selected Work</p>
+              <h2>Web Application Projects</h2>
+            </div>
+            <div id="projects-list" class="projects-grid"></div>
+          </article>
+        </section>
+      </main>
     </div>
 
     <script src="data.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
