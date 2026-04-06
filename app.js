@@ -93,19 +93,6 @@ const renderProjects = () => {
     });
 };
 
-const renderPhoto = () => {
-    if (!profile.photo) {
-        return;
-    }
-
-    const image = document.getElementById("profile-photo");
-    const placeholder = document.getElementById("photo-placeholder");
-
-    image.src = profile.photo;
-    image.hidden = false;
-    placeholder.hidden = true;
-};
-
 setText("full-name", profile.fullName);
 setText("headline", profile.headline);
 setText("summary", profile.summary);
@@ -115,4 +102,3 @@ renderSkills();
 renderList("education-list", education);
 renderList("experience-list", experience);
 renderProjects();
-renderPhoto();
