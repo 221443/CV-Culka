@@ -101,6 +101,16 @@ window.cvData = {
       description:
         "An in-browser conversion tool that transforms images and PDFs into a chosen output format, supporting batch input of mixed file types with no server upload required.",
       link: "https://converter-zeta-ebon.vercel.app/",
+      github: "https://github.com/221443/converter",
+    },
+    {
+      title: "Rubik's Cube",
+      role: "Solo developer",
+      stack: "JavaScript · HTML · CSS",
+      description:
+        "An interactive 3-D Rubik's Cube simulation playable in the browser, supporting full cube rotation and individual face moves.",
+      link: "https://221443.github.io/rubics-cube/",
+      github: "https://github.com/221443/rubics-cube",
     },
     {
       title: "Rainbow Forming in a Raindrop",
@@ -109,6 +119,7 @@ window.cvData = {
       description:
         "An interactive ray-optics simulation that visualises how sunlight refracts, reflects, and exits a spherical raindrop to form a rainbow, using Snell's law and the Cauchy dispersion model.",
       link: "https://221443.github.io/rainbow-forming/",
+      github: "https://github.com/221443/rainbow-forming",
     },
     {
       title: "Restaurant No a Co",
@@ -117,6 +128,7 @@ window.cvData = {
       description:
         "A clean, responsive informational website built for a local restaurant, presenting menu, opening hours, and contact details across all screen sizes.",
       link: "https://www.restauracenoaco.cz/",
+      github: "https://github.com/221443/restauracenoaco",
     },
     {
       title: "PlayCraft Minecraft Server Website",
@@ -125,6 +137,7 @@ window.cvData = {
       description:
         "A responsive static website created for a Minecraft community game server, communicating server rules, features, and how to join.",
       link: "https://playcraft-web.vercel.app/",
+      github: "https://github.com/221443/Playcraft-web",
     },
     {
       title: "Next Steps Spawner VS Code Extension",
@@ -132,7 +145,7 @@ window.cvData = {
       stack: "TypeScript · VS Code API",
       description:
         "A VS Code extension that reads structured follow-up task payloads from an agentic workflow and surfaces them as launchable Copilot Chat sessions via a tree view and status bar indicator.",
-      link: "https://github.com/221443/next-steps-spawner-extension",
+      github: "https://github.com/221443/next-steps-spawner-extension",
     },
     {
       title: "Random Data Generator",
@@ -141,6 +154,7 @@ window.cvData = {
       description:
         "A browser-based tool for generating configurable random identifiers with a custom prefix, suffix, and middle length, with one-click copy and batched generation for large counts.",
       link: "https://221443.github.io/randomDataGenerator/",
+      github: "https://github.com/221443/randomDataGenerator",
     },
   ],
 };
