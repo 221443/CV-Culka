@@ -80,12 +80,20 @@ window.cvData = {
     },
   ],
   // ─────────────────────────────────────────────────────────────────────────
-  // WEB APPLICATION PROJECTS
+  // SELECTED PROJECTS
   // To add a project: copy one object below and fill in your values.
   // To remove a project: delete the whole object (from { to }).
   // Keep "description" to exactly one sentence.
   // ─────────────────────────────────────────────────────────────────────────
   projects: [
+    {
+      title: "Photo Sorter",
+      role: "Solo developer",
+      stack: "Node.js · JavaScript · YAML · ExifTool",
+      description:
+        "A cross-platform Node CLI that reorganises mixed photo, video, document, and sidecar files into a year-based folder structure with metadata fallback, duplicate detection, and configurable copy or move modes.",
+      link: "https://github.com/221443/photo-sorter",
+    },
     {
       title: "Image & PDF Converter",
       role: "Solo developer",
