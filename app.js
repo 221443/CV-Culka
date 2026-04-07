@@ -103,6 +103,14 @@ const renderProjects = () => {
       card.appendChild(link);
     }
 
+    if (project.github) {
+      const ghLink = createNode("a", "project-link project-link--github", "GitHub");
+      ghLink.href = project.github;
+      ghLink.target = "_blank";
+      ghLink.rel = "noreferrer";
+      card.appendChild(ghLink);
+    }
+
     container.appendChild(card);
   });
 };
