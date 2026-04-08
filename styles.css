@@ -521,6 +521,114 @@ h2 {
     outline: none;
 }
 
+/* ── Hero photo layout ─────────────────────────────────────── */
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-photo-wrap {
+    flex-shrink: 0;
+    position: relative;
+    width: 230px;
+    /* extra padding so the badge and dot grid don't get cut off */
+    padding: 10px 10px 22px 22px;
+    margin: -10px -10px -22px -22px;
+}
+
+/* decorative dot grid behind the photo (top-right) */
+.hero-photo-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-image: radial-gradient(var(--border-accent) 1.5px, transparent 1.5px);
+    background-size: 9px 9px;
+    border-radius: 8px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-photo-frame {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(2.5deg);
+    transition: transform 440ms var(--ease), box-shadow 440ms var(--ease);
+    /* white gap + accent ring + depth shadow */
+    box-shadow:
+        0 0 0 3px var(--surface),
+        0 0 0 5px var(--border-accent),
+        0 18px 52px rgba(13, 107, 100, 0.18),
+        0 4px 12px rgba(16, 24, 20, 0.1);
+    cursor: default;
+    user-select: none;
+}
+
+.hero-photo-frame:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow:
+        0 0 0 3px var(--surface),
+        0 0 0 5px var(--accent),
+        0 28px 72px rgba(13, 107, 100, 0.26),
+        0 4px 12px rgba(16, 24, 20, 0.1);
+}
+
+.hero-photo {
+    display: block;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    object-position: center 18%;
+}
+
+/* floating availability badge */
+.hero-photo-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--text-2);
+    box-shadow: var(--shadow);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: badgePulse 2.2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.35); opacity: 0.65; }
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
 @media (max-width: 960px) {
     .content-grid {
         grid-template-columns: 1fr;
@@ -542,6 +650,18 @@ h2 {
     .page-shell {
         padding-inline: 16px;
     }
+
+    .hero-layout {
+        gap: 36px;
+    }
+
+    .hero-photo-wrap {
+        width: 186px;
+    }
+
+    .hero-photo {
+        height: 240px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -555,6 +675,23 @@ h2 {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .hero-photo-wrap {
+        width: 150px;
+        align-self: center;
+        padding: 8px 8px 20px 20px;
+        margin: -8px -8px -20px -20px;
+    }
+
+    .hero-photo {
+        height: 190px;
     }
 }
 
