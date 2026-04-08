@@ -124,3 +124,30 @@ renderSkills();
 renderList("education-list", education);
 renderList("experience-list", experience);
 renderProjects();
+
+// ── Lightbox ──────────────────────────────────────────────────
+const lightbox = document.getElementById("photo-lightbox");
+const trigger  = document.getElementById("photo-trigger");
+const closeBtn = document.getElementById("lightbox-close");
+const backdrop = lightbox ? lightbox.querySelector(".lightbox-backdrop") : null;
+
+const openLightbox = () => {
+  lightbox.hidden = false;
+  document.body.style.overflow = "hidden";
+  closeBtn.focus();
+};
+
+const closeLightbox = () => {
+  lightbox.hidden = true;
+  document.body.style.overflow = "";
+  trigger.focus();
+};
+
+if (trigger && lightbox) {
+  trigger.addEventListener("click", openLightbox);
+  closeBtn.addEventListener("click", closeLightbox);
+  backdrop.addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+  });
+}

@@ -29,14 +29,15 @@
               <ul id="contact-list" class="contact-list"></ul>
             </div>
             <div class="hero-photo-wrap">
-              <div class="hero-photo-frame">
+              <button class="hero-photo-frame" id="photo-trigger" aria-label="View full-size photo" type="button">
                 <img
                   src="_images/2026-04-08%2022_32_13-IMG_6549.JPG.webp"
                   alt="Alexandr Culka"
                   class="hero-photo"
                   draggable="false"
                 />
-              </div>
+                <span class="photo-zoom-hint" aria-hidden="true">⤢</span>
+              </button>
               <!-- <div class="hero-photo-badge" aria-hidden="true">
                 <span class="badge-dot"></span>
                 Open to work
@@ -89,6 +90,15 @@
           </article>
         </section>
       </main>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="photo-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Full-size photo" hidden>
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <img src="_images/IMG_6549.webp" alt="Alexandr Culka — full size" class="lightbox-img" draggable="false" />
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close" type="button">&times;</button>
+      </div>
     </div>
 
     <script src="data.js"></script>
