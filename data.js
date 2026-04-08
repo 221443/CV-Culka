@@ -92,7 +92,7 @@ window.cvData = {
       stack: "Node.js · JavaScript · YAML · ExifTool",
       description:
         "A cross-platform Node CLI that reorganises mixed photo, video, document, and sidecar files into a year-based folder structure with metadata fallback, duplicate detection, and configurable copy or move modes.",
-      link: "https://github.com/221443/photo-sorter",
+      github: "https://github.com/221443/photo-sorter",
     },
     {
       title: "Image & PDF Converter",
